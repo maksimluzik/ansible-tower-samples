@@ -1,4 +1,5 @@
 - name: add test cronjob
+  hosts: all
   cron:
       name: test cronjob
       state: present
