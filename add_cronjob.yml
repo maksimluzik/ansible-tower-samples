@@ -2,6 +2,7 @@
   hosts: all
   tasks:
     - name: test cronjob
+      become: true
       cron:
         name: test cronjob
         state: present
