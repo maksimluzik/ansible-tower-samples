@@ -1,7 +1,9 @@
 - name: add test cronjob
   hosts: all
-  cron:
-      name: test cronjob
-      state: present
-      minute: '*/5'
-      job: "/home/pelikohdenaytto/script.sh"
+  tasks:
+    - name: test cronjob
+      cron:
+        name: test cronjob
+        state: present
+        minute: '*/5'
+        job: "/home/pelikohdenaytto/script.sh"
