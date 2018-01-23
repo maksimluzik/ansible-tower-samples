@@ -1,0 +1,4 @@
+- hosts: all
+
+  environment:
+    http_proxy: http://proxy.example.com:8080
