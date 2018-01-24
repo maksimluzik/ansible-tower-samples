@@ -1,0 +1,7 @@
+- name: upgrade distro
+  hosts: all
+  tasks:
+    - name: Update all packages and distro to the latest version
+      apt:
+        update_cache: yes
+        upgrade: full
