@@ -5,6 +5,7 @@
     - name: Remove access from remote sources through Docker socket
       #when: env == "prod" or env == "stg"
       replace:
-          path: content/docker.service
-          regex: "-H tcp://0.0.0.0:2375"
-          replace: ""
+        path: content/docker.service
+        regexp: '-H tcp://0.0.0.0:2375'
+        replace: ''
+        backup: yes
