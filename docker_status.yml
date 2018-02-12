@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: Check Docker status
-      shell: docker ps a
+      shell: docker ps
 
