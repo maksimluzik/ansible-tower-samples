@@ -1,0 +1,6 @@
+- name: Check that Docker containers are running
+  hosts: all
+  tasks:
+    - name: Check Docker status
+      shell: docker ps a
+
